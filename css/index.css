@@ -209,6 +209,9 @@ body {
 }
 .aboutUs .row .image {
   height: 400px;
+  padding: 25px;
+  background: #eee;
+  border: 1px solid #ddd;
 }
 .aboutUs .row .image img {
   width: 100%;
