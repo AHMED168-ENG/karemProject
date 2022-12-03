@@ -3,7 +3,7 @@ $(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     autoplay: true,
-    margin: 10,
+    margin: 0,
     nav: false,
     mouseDrag: true,
     dotsEach: true,
@@ -22,3 +22,12 @@ $(function () {
   });
 });
 ///////////////////////////////////////// owl-carousel ////////////////////////////////
+// ///////////////////////////////////////// nice scroll ////////////////////////////////
+// $(function () {
+//   "use strict";
+
+//   $("html").niceScroll({
+//     cursorColor: "#040B14",
+//   });
+// });
+// ///////////////////////////////////////// nice scroll ////////////////////////////////
