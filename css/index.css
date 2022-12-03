@@ -1,0 +1,265 @@
+/* ////////// ///////////// start custom scroll tags //////////////////////// */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #245c8f;
+}
+/* ////////// ///////////// end custom scroll tags //////////////////////// */
+
+/* ////////// ///////////// start seting tags //////////////////////// */
+body {
+  height: 2000px;
+  padding-top: 96px;
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+}
+* ul {
+  padding: 0;
+}
+/* ////////// ///////////// start seting tags //////////////////////// */
+
+/* ////////// ///////////// start navbar //////////////////////// */
+.bg-light {
+  background-color: #f8f9fa !important;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 150;
+}
+.navbar .navbar-brand {
+  width: 130px;
+  height: 80px;
+}
+.navbar .navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding: 5px 10px !important;
+  font-weight: 600;
+}
+/* ////////// ///////////// end navbar //////////////////////// */
+
+/* ////////// ///////////// start show_carosal //////////////////////// */
+.show_carosal {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.show_carosal .over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(10, 16, 38, 0.5);
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.show_carosal .over .head {
+  width: 100%;
+  height: 100%;
+  padding-top: 12%;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.show_carosal .over .head h2 {
+  color: white;
+  font-weight: 900;
+  line-height: 1.4;
+  font-size: 32px;
+}
+.show_carosal .over .head p {
+  font-size: 15px;
+  color: white;
+}
+
+.show_carosal .over .head .scroll_down {
+  width: 75px;
+  height: 75px;
+  background: rgb(128, 128, 128, 0.4);
+  position: relative;
+  margin: 35px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show_carosal .over .head .scroll_down::after {
+  content: "";
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  border: 2px solid rgb(0, 0, 0, 0.3);
+  animation: show_carosal 1.5s linear infinite;
+  border-radius: 50%;
+}
+@keyframes show_carosal {
+  0% {
+    width: 60%;
+    height: 60%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+.show_carosal .over .head .scroll_down a {
+  background: rgb(0, 0, 0, 0.6);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+
+.show_carosal .paitant,
+.show_carosal .paitant div {
+  height: 100%;
+  width: 100%;
+}
+
+.show_carosal .paitant div.one {
+  background-image: url("../images/carosal/carosal3.jpg");
+}
+.show_carosal .paitant div.tow {
+  background-image: url("../images/carosal/carosal2.jpg");
+}
+.show_carosal .paitant div.three {
+  background-image: url("../images/carosal/carosal4.jpg");
+}
+.show_carosal .paitant div {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* ////////// ///////////// end show_carosal //////////////////////// */
+
+/* ////////// ///////////// start about us //////////////////////// */
+.aboutUs {
+  padding: 130px 0 70px;
+}
+.aboutUs .row .component {
+  padding-top: 30px;
+}
+.aboutUs .row .component h2,
+.ourVision .row .component h2,
+.messages .row .component h2,
+.rateUs .row .component h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  color: #245c8f;
+}
+.aboutUs .row .component h2::after,
+.ourVision .row .component h2::after,
+.messages .row .component h2::after,
+.rateUs .row .component h2::after {
+  content: "";
+  width: 40%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #27a49c;
+  position: absolute;
+  transform: translate(0, -100%);
+  right: 0;
+}
+.aboutUs .row .component p {
+  font-size: 15px;
+}
+.aboutUs .row .component button {
+  border: 1px solid #ccc;
+  background: #eee;
+  padding: 7px 25px;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+.aboutUs .row .component button:hover {
+  background: #ccc;
+  border: 1px solid #eee;
+  color: #27a49c;
+}
+.aboutUs .row .image {
+  height: 400px;
+}
+.aboutUs .row .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* ////////// ///////////// end about us //////////////////////// */
+
+/* ////////// ///////////// start ourVision //////////////////////// */
+.ourVision,
+.rateUs,
+.messages {
+  padding: 20px 0;
+}
+.ourVision .row .component h2 i,
+.messages .row .component h2 i,
+.rateUs .row .component h2 i {
+  margin: 0 15px;
+  font-size: 30px;
+}
+.rateUs .row .component p,
+.ourVision .row .component p,
+.messages .row .component p {
+  background: #eee;
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.rateUs .row .component p:hover,
+.ourVision .row .component p:hover,
+.messages .row .component p:hover {
+  box-shadow: 7px 7px 10px rgb(39, 164, 156, 0.1);
+  transition: 0.5s;
+}
+
+/* ////////// ///////////// end ourVision //////////////////////// */
+
+/* ////////// ///////////// start awl carosal //////////////////////// */
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #18d26e !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: white !important;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: none;
+}
+
+/* ////////// ///////////// end awl carosal //////////////////////// */
