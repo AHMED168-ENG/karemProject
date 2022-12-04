@@ -22,6 +22,7 @@
 /* ////////// ///////////// start seting tags //////////////////////// */
 body {
   padding-top: 96px;
+  background: #f9f9f9;
 }
 
 * {
@@ -452,6 +453,7 @@ footer div.row > div:nth-of-type(5) ul li a i {
   cursor: pointer;
   transition: 0.3s;
   z-index: 3000;
+  /* display: none; */
 }
 .upping-button:hover {
   background: #ff9700;
