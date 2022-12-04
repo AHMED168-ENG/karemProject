@@ -28,6 +28,7 @@ body {
 * {
   font-family: "Cairo", sans-serif;
 }
+
 * ul {
   padding: 0;
 }
@@ -54,6 +55,9 @@ body {
 .navbar-light .navbar-nav .nav-link {
   padding: 5px 10px !important;
   font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: #17989c;
 }
 /* ////////// ///////////// end navbar //////////////////////// */
 
@@ -105,6 +109,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .show_carosal .over .head .scroll_down::after {
   content: "";
   width: 60%;
@@ -202,17 +207,18 @@ body {
   font-size: 15px;
 }
 .aboutUs .row .component button {
-  border: 1px solid #ccc;
-  background: #eee;
   padding: 7px 25px;
   border-radius: 5px;
   transition: 0.7s;
+  background: #17989c;
+  border: 1px solid #158488;
+  color: white;
 }
 .aboutUs .row .component button:hover {
-  background: #ccc;
-  border: 1px solid #eee;
-  color: #27a49c;
+  background: #158488;
+  border: 1px solid #17989c;
 }
+
 .aboutUs .row .image {
   height: 400px;
   padding: 25px;
@@ -272,7 +278,51 @@ body {
 .ourService .sevices .row .item {
   border: 1px solid #eee;
   border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.ourService .sevices .row .item img {
   margin-bottom: 20px;
+  width: 55%;
+}
+.ourService .sevices .row .item h2 {
+  font-size: 18px;
+  color: #19acb1;
+}
+.ourService .sevices .row .item p {
+  font-family: "Satisfy", cursive;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.ourService .sevices .row .item button,
+.ourService .sevices > button {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  background: #17989c;
+  color: white;
+  font-size: 15px;
+  border: 1px solid #158488;
+  padding: 6px 18px;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+.ourService .sevices .row .item button:hover,
+.ourService .sevices > button:hover {
+  background: #158488;
+  border: 1px solid #17989c;
+}
+.ourService .sevices > button {
+  position: inherit;
+  margin: 70px auto 0;
+  display: block;
+  width: 100%;
+  transform: translate(0);
 }
 /* ////////// ///////////// end ourService //////////////////////// */
 
