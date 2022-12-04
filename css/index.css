@@ -21,7 +21,7 @@
 
 /* ////////// ///////////// start seting tags //////////////////////// */
 body {
-  height: 2000px;
+  height: 4000px;
   padding-top: 96px;
 }
 
@@ -169,20 +169,26 @@ body {
   padding-top: 30px;
 }
 .aboutUs .row .component h2,
-.ourVision .row .component h2,
-.messages .row .component h2,
-.rateUs .row .component h2 {
+.ourVision .component h2,
+.messages .component h2,
+.companies .component h2,
+.rateUs .component h2,
+.ourService .head h2 {
   font-size: 30px;
   margin-bottom: 20px;
   font-weight: 500;
   position: relative;
   display: inline-block;
   color: #245c8f;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 .aboutUs .row .component h2::after,
-.ourVision .row .component h2::after,
-.messages .row .component h2::after,
-.rateUs .row .component h2::after {
+.ourVision .component h2::after,
+.messages .component h2::after,
+.companies .component h2::after,
+.rateUs .component h2::after,
+.ourService .head h2::after {
   content: "";
   width: 40%;
   height: 3px;
@@ -224,32 +230,66 @@ body {
 /* ////////// ///////////// start ourVision //////////////////////// */
 .ourVision,
 .rateUs,
-.messages {
+.messages,
+.companies,
+.ourService {
   padding: 20px 0;
 }
-.ourVision .row .component h2 i,
-.messages .row .component h2 i,
-.rateUs .row .component h2 i {
+.ourVision .component h2 i,
+.messages .component h2 i,
+.companies .component h2 i,
+.rateUs .component h2 i {
   margin: 0 15px;
   font-size: 30px;
 }
-.rateUs .row .component p,
-.ourVision .row .component p,
-.messages .row .component p {
+.rateUs .component p,
+.ourVision .component p,
+.companies .component p,
+.messages .component p {
   background: #eee;
   padding: 15px;
   border: 1px solid #ddd;
   font-size: 15px;
   border-radius: 5px;
 }
-.rateUs .row .component p:hover,
-.ourVision .row .component p:hover,
-.messages .row .component p:hover {
+.rateUs .component p:hover,
+.ourVision .component p:hover,
+.messages .component p:hover {
   box-shadow: 7px 7px 10px rgb(39, 164, 156, 0.1);
   transition: 0.5s;
 }
 
 /* ////////// ///////////// end ourVision //////////////////////// */
+
+/* ////////// ///////////// start ourService //////////////////////// */
+.ourService .head {
+  margin-bottom: 50px;
+}
+.ourService .head p {
+  font-size: 14px;
+  width: 60%;
+}
+.ourService .sevices .row .item {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* ////////// ///////////// end ourService //////////////////////// */
+
+/* ////////// ///////////// start companies //////////////////////// */
+
+.companies .parant div.child {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+.companies .parant div.child img {
+  width: 100%;
+  height: 100%;
+}
+/* ////////// ///////////// end companies //////////////////////// */
 
 /* ////////// ///////////// start awl carosal //////////////////////// */
 

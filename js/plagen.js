@@ -1,6 +1,6 @@
 ///////////////////////////////////////// owl-carousel ////////////////////////////////
 $(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".owl_show_carosal").owlCarousel({
     loop: true,
     autoplay: true,
     margin: 0,
@@ -12,11 +12,27 @@ $(function () {
       0: {
         items: 1,
       },
-      576: {
+    },
+  });
+});
+$(function () {
+  $(".companis_carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 15,
+    nav: false,
+    mouseDrag: true,
+    dotsEach: true,
+    dots: false,
+    responsive: {
+      0: {
         items: 1,
       },
+      576: {
+        items: 2,
+      },
       798: {
-        items: 1,
+        items: 3,
       },
     },
   });
