@@ -5,11 +5,9 @@ var uppernave = window.document.querySelector(".upper-nave"),
   navebarli = document.querySelectorAll(".navbar .nav-item");
 var about = document.getElementById("about");
 var menue = document.getElementById("services");
-var spechils = document.getElementById("spechils");
-var event = document.getElementById("event");
-var chefs = document.getElementById("chefs");
-var galary = document.getElementById("galary");
-var contact = document.getElementById("contact");
+var spechils = document.getElementById("ourNews");
+var event = document.getElementById("consultation");
+var chefs = document.getElementById("callUs");
 
 window.onscroll = function () {
   "use strict";
