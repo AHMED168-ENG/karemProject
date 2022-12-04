@@ -16,6 +16,22 @@ $(function () {
   });
 });
 $(function () {
+  $(".owl-ourNews-carosal").owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 0,
+    nav: true,
+    mouseDrag: true,
+    dotsEach: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+});
+$(function () {
   $(".companis_carousel").owlCarousel({
     loop: true,
     autoplay: true,

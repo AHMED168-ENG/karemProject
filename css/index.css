@@ -169,7 +169,7 @@ body {
 
 /* ////////// ///////////// start about us //////////////////////// */
 .aboutUs {
-  padding: 130px 0 70px;
+  padding: 100px 0 50px;
 }
 .aboutUs .row .component {
   padding-top: 30px;
@@ -179,6 +179,7 @@ body {
 .messages .component h2,
 .companies .component h2,
 .rateUs .component h2,
+.ourNews h2,
 .ourService .head h2 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -194,6 +195,7 @@ body {
 .messages .component h2::after,
 .companies .component h2::after,
 .rateUs .component h2::after,
+.ourNews h2::after,
 .ourService .head h2::after {
   content: "";
   width: 40%;
@@ -276,7 +278,8 @@ body {
   font-size: 14px;
   width: 60%;
 }
-.ourService .sevices .row .item {
+.ourService .sevices .row .item,
+.ourNews .row > div div.item {
   border: 1px solid #eee;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -322,10 +325,37 @@ body {
   position: inherit;
   margin: 70px auto 0;
   display: block;
-  width: 100%;
+  width: 40%;
   transform: translate(0);
 }
 /* ////////// ///////////// end ourService //////////////////////// */
+
+/* ////////// ///////////// start ourNews, //////////////////////// */
+.ourNews {
+  padding: 30px 0;
+}
+.ourNews .head p {
+  width: 70%;
+}
+.ourNews .row > div div.item {
+  padding: 20px 10px;
+}
+.ourNews .row > div div.item h4 a {
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1.1;
+}
+.ourNews .row > div div.item h4 a:hover {
+  text-decoration: underline;
+}
+.ourNews .row > div div.item p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.ourNews .row > div:nth-child(4) > div div img {
+  height: 220px;
+}
+/* ////////// ///////////// end ourNews, //////////////////////// */
 
 /* ////////// ///////////// start companies //////////////////////// */
 
@@ -353,27 +383,39 @@ footer div.row > div h5 {
   font-size: 19px;
   margin-bottom: 20px;
 }
-footer div.row > div:nth-child(1) p {
+footer div.row > div:nth-of-type(1) p {
   font-size: 14px;
   font-style: italic;
   width: 70%;
 }
-footer div.row > div:nth-child(2) ul li a,
-footer div.row > div:nth-child(3) ul li a {
+footer div.row > div:nth-of-type(2) ul li a,
+footer div.row > div:nth-of-type(3) ul li a {
   color: #87c8ca;
   font-family: "Tajawal", sans-serif;
   font-size: 16px;
 }
-footer div.row > div:nth-child(2) ul li a:hover,
-footer div.row > div:nth-child(3) ul li a:hover {
+footer div.row > div:nth-of-type(2) ul li a:hover,
+footer div.row > div:nth-of-type(3) ul li a:hover {
   opacity: 0.8;
 }
-footer div.row > div:nth-child(3) ul li i {
+footer div.row > div:nth-of-type(3) ul li i {
   margin: 0 10px;
   font-size: 15px;
 }
-footer div.row > div:nth-child(3) ul li:nth-child(1) {
+footer div.row > div:nth-of-type(3) ul li:nth-of-type(1) {
   font-family: "Tajawal", sans-serif;
+}
+footer div.row > div:nth-of-type(4) p {
+  font-size: 18px;
+}
+footer div.row > div:nth-of-type(4) p a {
+  color: #87c8ca;
+  font-size: 15px !important;
+}
+footer div.row > div:nth-of-type(5) ul li a i {
+  color: #fff;
+  font-size: 25px !important;
+  margin: 0 10px;
 }
 
 /* ////////// ///////////// end footer //////////////////////// */
@@ -393,3 +435,24 @@ footer div.row > div:nth-child(3) ul li:nth-child(1) {
 }
 
 /* ////////// ///////////// end awl carosal //////////////////////// */
+
+.upping-button {
+  width: 45px;
+  height: 45px;
+  background: #168a8e;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  font-size: 28px !important;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3000;
+}
+.upping-button:hover {
+  background: #ff9700;
+}
